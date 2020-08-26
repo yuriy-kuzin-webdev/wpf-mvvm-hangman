@@ -1,0 +1,198 @@
+﻿<Window x:Class="HangmanApplication.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HangmanApplication"
+        xmlns:controllers="clr-namespace:HangmanApplication.Controllers"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="500">
+    <Window.DataContext>
+        <controllers:MainController x:Name="mc"/>
+    </Window.DataContext>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.6*"/>
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition Height="0.3*"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <!--GALLOWS-->
+        <Grid>
+            <!--HEAD-->
+            <Border BorderBrush="LightGray" Width="50" Height="50" CornerRadius="50" BorderThickness="5">
+                <Border.RenderTransform>
+                    <TranslateTransform X="25" Y="-65"/>
+                </Border.RenderTransform>
+            </Border>
+            <Border BorderBrush="Black" Width="50" Height="50" CornerRadius="50" BorderThickness="5" Opacity="{Binding Gallows.Body[0].IsVisible}">
+                <Border.RenderTransform>
+                    <TranslateTransform X="25" Y="-65"/>
+                </Border.RenderTransform>
+            </Border>
+            <!--LEFT LEG-->
+            <Border Background="LightGray" Width="5" Height="80">
+                <Border.RenderTransform>
+                    <TransformGroup>
+                        <TranslateTransform X="25" Y="80"/>
+                        <RotateTransform Angle="15" CenterX="25" CenterY="80"/>
+                    </TransformGroup>
+                </Border.RenderTransform>
+            </Border>
+            <Border Background="Black" Width="5" Height="80" Opacity="{Binding Gallows.Body[2].IsVisible}">
+                <Border.RenderTransform>
+                    <TransformGroup>
+                        <TranslateTransform X="25" Y="80"/>
+                        <RotateTransform Angle="15" CenterX="25" CenterY="80"/>
+                    </TransformGroup>
+                </Border.RenderTransform>
+            </Border>
+            <!--RIGHT LEG-->
+            <Border Background="LightGray" Width="5" Height="80">
+                <Border.RenderTransform>
+                    <TransformGroup>
+                        <TranslateTransform X="25" Y="80"/>
+                        <RotateTransform Angle="-15" CenterX="25" CenterY="80"/>
+                    </TransformGroup>
+                </Border.RenderTransform>
+            </Border>
+            <Border Background="Black" Width="5" Height="80" Opacity="{Binding Gallows.Body[3].IsVisible}">
+                <Border.RenderTransform>
+                    <TransformGroup>
+                        <TranslateTransform X="25" Y="80"/>
+                        <RotateTransform Angle="-15" CenterX="25" CenterY="80"/>
+                    </TransformGroup>
+                </Border.RenderTransform>
+            </Border>
+            <!--LEFT ARM-->
+            <Border Background="LightGray" Width="5" Height="80">
+                <Border.RenderTransform>
+                    <TransformGroup>
+                        <TranslateTransform X="25" Y="5"/>
+                        <RotateTransform Angle="15" CenterX="25" CenterY="5"/>
+                    </TransformGroup>
+                </Border.RenderTransform>
+            </Border>
+            <Border Background="Black" Width="5" Height="80" Opacity="{Binding Gallows.Body[4].IsVisible}">
+                <Border.RenderTransform>
+                    <TransformGroup>
+                        <TranslateTransform X="25" Y="5"/>
+                        <RotateTransform Angle="15" CenterX="25" CenterY="5"/>
+                    </TransformGroup>
+                </Border.RenderTransform>
+            </Border>
+            <!--RIGHT ARM-->
+            <Border Background="LightGray" Width="5" Height="80">
+                <Border.RenderTransform>
+                    <TransformGroup>
+                        <TranslateTransform X="25" Y="5"/>
+                        <RotateTransform Angle="-15" CenterX="25" CenterY="5"/>
+                    </TransformGroup>
+                </Border.RenderTransform>
+            </Border>
+            <Border Background="Black" Width="5" Height="80" Opacity="{Binding Gallows.Body[5].IsVisible}">
+                <Border.RenderTransform>
+                    <TransformGroup>
+                        <TranslateTransform X="25" Y="5"/>
+                        <RotateTransform Angle="-15" CenterX="25" CenterY="5"/>
+                    </TransformGroup>
+                </Border.RenderTransform>
+            </Border>
+            <!--BODY-->
+            <Border Background="LightGray" Width="5" Height="80">
+                <Border.RenderTransform>
+                    <TranslateTransform X="25" Y="0"/>
+                </Border.RenderTransform>
+            </Border>
+            <Border Background="Black" Width="5" Height="80" Opacity="{Binding Gallows.Body[1].IsVisible}">
+                <Border.RenderTransform>
+                    <TranslateTransform X="25" Y="0"/>
+                </Border.RenderTransform>
+            </Border>
+            <!--VERTICAL TOP LINE-->
+            <Border Background="Black" Width="5" Height="50">
+                <Border.RenderTransform>
+                    <TranslateTransform X="25" Y="-115"/>
+                </Border.RenderTransform>
+            </Border>
+            <!--TOP LINE-->
+            <Border Background="Black" Width="80" Height="5">
+                <Border.RenderTransform>
+                    <TranslateTransform X="-10" Y="-140"/>
+                </Border.RenderTransform>
+            </Border>
+            <!--VERTICAL LEFT LINE-->
+            <Border Background="Black" Width="5" Height="300">
+                <Border.RenderTransform>
+                    <TranslateTransform X="-50" Y="0"/>
+                </Border.RenderTransform>
+            </Border>
+            <!--BOTTOM LINE-->
+            <Border Background="Black" Width="200" Height="5">
+                <Border.RenderTransform>
+                    <TranslateTransform X="0" Y="150"/>
+                </Border.RenderTransform>
+            </Border>
+        </Grid>
+        <!--SECRET-->
+        <ItemsControl Grid.Row="1" ItemsSource="{Binding Secret.Word}">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Border CornerRadius="5" Background="#FF316FDC" Margin="1" Width="30">
+                        <TextBlock Text="{Binding Text}" HorizontalAlignment="Center" VerticalAlignment="Center"
+                                   FontSize="24" FontWeight="Bold" Opacity="{Binding IsVisible}"/>
+                    </Border>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+        <!--KEYBOARD-->
+        <ItemsControl Grid.Row="2" ItemsSource="{Binding Letters.Letters}">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel Margin="90,10" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Border CornerRadius="10" Background="#FF3592E4" Margin="1">
+                        <Button BorderBrush="Transparent" Background="Transparent" 
+                                Content="{Binding Text}" IsEnabled="{Binding IsVisible, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+                                FontWeight="Bold" Command="{Binding ElementName=mc, Path=TryLetterCommand}" CommandParameter="{Binding Text}"
+                                FontSize="14" Width="30" Height="30"
+                                HorizontalAlignment="Center">
+                            <Button.Resources>
+                                <Style TargetType="{x:Type Border}">
+                                    <Setter Property="CornerRadius" Value="10"/>
+                                </Style>
+                            </Button.Resources>
+                        </Button>
+                    </Border>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+        <!--RELOAD BUTTON-->
+        <Border Grid.Row="3" CornerRadius="10" Background="#FF3592E4" HorizontalAlignment="Center">
+            <Button BorderBrush="Transparent" Background="Transparent"
+                                FontSize="16" FontWeight="Bold"
+                                HorizontalAlignment="Center"
+                                Content="Reload" Width="150"
+                                Command="{Binding ResetCommand}">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+        </Border>
+        <!--MODAL-->
+        <Grid Grid.Row="0" Background="#FF6281EE" Visibility="{Binding Modal.IsVisible,Converter={x:Static local:BooleanToStringConverter.Instance}}" Opacity="0.5">
+            <TextBlock Text="{Binding Modal.Text}" FontWeight="Bold" FontSize="32"  HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </Grid>
+        
+    </Grid>
+</Window>

@@ -1,0 +1,32 @@
+C:\DevEnv\C#\WPF\2020.05.01 Hangman\HangmanApplication\HangmanApplication\bin\Debug\HangmanApplication.exe.config
+C:\DevEnv\C#\WPF\2020.05.01 Hangman\HangmanApplication\HangmanApplication\bin\Debug\HangmanApplication.exe
+C:\DevEnv\C#\WPF\2020.05.01 Hangman\HangmanApplication\HangmanApplication\bin\Debug\HangmanApplication.pdb
+C:\DevEnv\C#\WPF\2020.05.01 Hangman\HangmanApplication\HangmanApplication\obj\Debug\HangmanApplication.csprojAssemblyReference.cache
+C:\DevEnv\C#\WPF\2020.05.01 Hangman\HangmanApplication\HangmanApplication\obj\Debug\MainWindow.g.cs
+C:\DevEnv\C#\WPF\2020.05.01 Hangman\HangmanApplication\HangmanApplication\obj\Debug\App.g.cs
+C:\DevEnv\C#\WPF\2020.05.01 Hangman\HangmanApplication\HangmanApplication\obj\Debug\HangmanApplication_MarkupCompile.cache
+C:\DevEnv\C#\WPF\2020.05.01 Hangman\HangmanApplication\HangmanApplication\obj\Debug\HangmanApplication_MarkupCompile.lref
+C:\DevEnv\C#\WPF\2020.05.01 Hangman\HangmanApplication\HangmanApplication\obj\Debug\MainWindow.baml
+C:\DevEnv\C#\WPF\2020.05.01 Hangman\HangmanApplication\HangmanApplication\obj\Debug\HangmanApplication.g.resources
+C:\DevEnv\C#\WPF\2020.05.01 Hangman\HangmanApplication\HangmanApplication\obj\Debug\HangmanApplication.Properties.Resources.resources
+C:\DevEnv\C#\WPF\2020.05.01 Hangman\HangmanApplication\HangmanApplication\obj\Debug\HangmanApplication.csproj.GenerateResource.cache
+C:\DevEnv\C#\WPF\2020.05.01 Hangman\HangmanApplication\HangmanApplication\obj\Debug\HangmanApplication.csproj.CoreCompileInputs.cache
+C:\DevEnv\C#\WPF\2020.05.01 Hangman\HangmanApplication\HangmanApplication\obj\Debug\HangmanApplication.exe
+C:\DevEnv\C#\WPF\2020.05.01 Hangman\HangmanApplication\HangmanApplication\obj\Debug\HangmanApplication.pdb
+C:\DevEnv\C#\WPF\2020.05.01 Hangman\HangmanApplication\HangmanApplication\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Administrator\Downloads\Diagrams\HangmanApplication\HangmanApplication\bin\Debug\HangmanApplication.exe.config
+C:\Users\Administrator\Downloads\Diagrams\HangmanApplication\HangmanApplication\bin\Debug\HangmanApplication.exe
+C:\Users\Administrator\Downloads\Diagrams\HangmanApplication\HangmanApplication\bin\Debug\HangmanApplication.pdb
+C:\Users\Administrator\Downloads\Diagrams\HangmanApplication\HangmanApplication\obj\Debug\HangmanApplication.csprojAssemblyReference.cache
+C:\Users\Administrator\Downloads\Diagrams\HangmanApplication\HangmanApplication\obj\Debug\MainWindow.g.cs
+C:\Users\Administrator\Downloads\Diagrams\HangmanApplication\HangmanApplication\obj\Debug\App.g.cs
+C:\Users\Administrator\Downloads\Diagrams\HangmanApplication\HangmanApplication\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Administrator\Downloads\Diagrams\HangmanApplication\HangmanApplication\obj\Debug\HangmanApplication_MarkupCompile.cache
+C:\Users\Administrator\Downloads\Diagrams\HangmanApplication\HangmanApplication\obj\Debug\HangmanApplication_MarkupCompile.lref
+C:\Users\Administrator\Downloads\Diagrams\HangmanApplication\HangmanApplication\obj\Debug\MainWindow.baml
+C:\Users\Administrator\Downloads\Diagrams\HangmanApplication\HangmanApplication\obj\Debug\HangmanApplication.g.resources
+C:\Users\Administrator\Downloads\Diagrams\HangmanApplication\HangmanApplication\obj\Debug\HangmanApplication.Properties.Resources.resources
+C:\Users\Administrator\Downloads\Diagrams\HangmanApplication\HangmanApplication\obj\Debug\HangmanApplication.csproj.GenerateResource.cache
+C:\Users\Administrator\Downloads\Diagrams\HangmanApplication\HangmanApplication\obj\Debug\HangmanApplication.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Downloads\Diagrams\HangmanApplication\HangmanApplication\obj\Debug\HangmanApplication.exe
+C:\Users\Administrator\Downloads\Diagrams\HangmanApplication\HangmanApplication\obj\Debug\HangmanApplication.pdb
